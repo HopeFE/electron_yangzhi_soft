@@ -1,0 +1,19 @@
+{
+  "name": "WH_INTELLIGENT_BREEDING_MANAGER_SOFT",
+  "version": "1.0.0",
+  "description": "Yangzhi Soft",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=./dist --icon=app.ico --app-version=1.0.0 --download.mirror=https://npm.taobao.org/mirrors/electron/",
+    "installer": "node ./install.js"
+  },
+  "author": "Hope <hopefullstack@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2",
+    "electron-winstaller": "^2.6.3",
+    "rimraf": "^2.6.1"
+  }
+}
